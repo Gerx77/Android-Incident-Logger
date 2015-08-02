@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+    <string-array name="drawer_items_array">
+        <item>@string/title_activity_create_incident</item>
+        <item>@string/title_activity_incident_registry</item>
+        <item>@string/title_activity_settings</item>
+        <item>@string/title_activity_help</item>
+        <item>@string/title_activity_about</item>
+        <item>@string/title_activity_contact</item>
+        <item>@string/Logout</item>
+    </string-array>
+
+</resources>

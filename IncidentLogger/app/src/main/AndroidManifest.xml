@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.riskwizard.incidentlogger" >
+
+    <uses-sdk android:targetSdkVersion="21" android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_rw"
+        android:label="@string/app_name"
+        android:logo="@drawable/ic_launcher_rw"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activities.Splash"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.Login"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activities.Settings"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name=".activities.Help"
+            android:label="@string/title_activity_help" >
+        </activity>
+        <activity
+            android:name=".activities.About"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name=".activities.IncidentRegistry"
+            android:label="@string/title_activity_incident_registry" >
+        </activity>
+        <activity
+            android:name=".activities.DisplayIncident"
+            android:label="@string/title_activity_display_incident"
+            android:parentActivityName=".activities.MainActivity" >
+        </activity>
+        <activity
+            android:name=".activities.IncidentForm"
+            android:label="@string/title_activity_incident_form"
+            android:parentActivityName=".activities.IncidentRegistry" >
+        </activity>
+        <activity
+            android:name=".activities.AttachmentActivity"
+            android:label="@string/title_activity_attachment" >
+        </activity>
+        <activity
+            android:name=".activities.Contact"
+            android:label="@string/title_activity_contact" >
+        </activity>
+    </application>
+
+</manifest>
