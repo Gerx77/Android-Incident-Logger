@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base"/>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- You can also set colorControlNormal, colorControlActivated
+             colorControlHighlight & colorSwitchThumbNormal. -->
+
+        <item name="android:spinnerItemStyle">@style/SpinnerTextViewItem</item>
+        <item name="android:buttonStyle">@style/Button</item>
+
+        <item name="drawerArrowStyle">@style/Theme.Test.DrawerArrowStyle</item>
+
+    </style>
+
+    <style name="Theme.Test.DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="SpinnerTextViewItem">
+        <item name="android:textSize" >16dp</item>
+        <item name="android:textStyle" >bold</item>
+    </style>
+
+
+    <style name="Button" parent="@style/Widget.AppCompat.ActionButton">
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:radius">2dp</item>
+    </style>
+
+    <style name="NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>
